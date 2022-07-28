@@ -221,7 +221,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 240px;
+  width: 247px;
   height: 35px;
   background: #f20f38;
   border-radius: 3px 3px 0px 0px;
@@ -236,7 +236,7 @@
 }
 
 .popup-main-container {
-  width: 240px;
+  width: 247px;
   height: 125px;
   display: flex;
   flex-direction: column;
