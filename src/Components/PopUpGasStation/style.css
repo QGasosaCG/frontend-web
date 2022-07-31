@@ -6,8 +6,6 @@
   align-items: center;
   padding: 0px;
   position: absolute;
-  width: 1280px;
-  height: 720px;
   width: 640px;
   height: 344px;
   left: 320px;
@@ -106,7 +104,7 @@
   gap: 5px;
 }
 
-.popup-fuel-info-container p {
+.popup-fuel-info-container input {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -120,6 +118,7 @@
   font-weight: 400;
   line-height: 15px;
   color: #023059;
+  border: none;
 }
 
 .popup-price-fuel-container {
@@ -131,7 +130,7 @@
   gap: 5px;
 }
 
-.popup-price-fuel-container p {
+.popup-price-fuel-container input {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -145,6 +144,7 @@
   font-weight: 400;
   line-height: 15px;
   color: #023059;
+  border: none;
 }
 
 .popup-customize-fuel {
@@ -192,6 +192,8 @@
   height: 20px;
   background: #f20f38;
   border-radius: 2px;
+  border: none;
+  cursor: pointer;
 }
 
 .popup-save-button p {
@@ -214,6 +216,13 @@
   align-items: center;
   text-align: center;
   color: #afafaf;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-nf {
+  position: relative;
+  height: 385px;
 }
 
 .popup-logo-container {

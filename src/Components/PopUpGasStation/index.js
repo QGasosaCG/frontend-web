@@ -3,8 +3,15 @@ import "./style.css";
 import icon3 from "../../Assets/icon3.png";
 import icon4 from "../../Assets/icon4.png";
 import clear from "../../Assets/clear-icon.png";
+import { useUserContext } from "../../Hooks/useUserContext";
 
 export function PopUpGasStation() {
+  const { addPosto, setAddPosto } = useUserContext(false);
+
+  function adicionaPosto(e) {
+    e.preventDefault();
+    setAddPosto(!addPosto);
+  }
   return (
     <body className="body-popup">
       <div class="popup-station-container">
@@ -19,15 +26,15 @@ export function PopUpGasStation() {
         <div class="popup-fuel-container">
           <div class="popup-fuel-info-container">
             <h2>Nome do Combustível: </h2>
-            <p>Gasolina</p>
-            <p>Etanol</p>
-            <p>Diesel</p>
+            <input type="text" placeholder="Gasolina"></input>
+            <input type="text" placeholder="Etanol"></input>
+            <input type="text" placeholder="Diesel"></input>
           </div>
           <div class="popup-price-fuel-container">
             <h2>Preço do Litro: </h2>
-            <p>R$ 7,09</p>
-            <p>R$ 7,09</p>
-            <p>R$ 7,09</p>
+            <input type="text" placeholder="R$ "></input>
+            <input type="text" placeholder="R$ "></input>
+            <input type="text" placeholder="R$ "></input>
           </div>
         </div>
         <div class="popup-customize-fuel">
@@ -35,12 +42,16 @@ export function PopUpGasStation() {
           <p>Adicionar combustível comercializado</p>
         </div>
         <div class="popup-buttons">
-          <div class="popup-cancel-button">
+          <button
+            onClick={adicionaPosto}
+            admin={addPosto}
+            class="popup-cancel-button"
+          >
             <p>Cancelar</p>
-          </div>
-          <div class="popup-save-button">
+          </button>
+          <button class="popup-save-button">
             <p>Salvar</p>
-          </div>
+          </button>
         </div>
       </div>
       <div className="popup-nf">
