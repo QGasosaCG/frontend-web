@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as S from "./style";
 import id from "../../Assets/id.png";
 
-import Postos from "../../Components/Postos";
+import { GasStationNavigate } from "../../Components/GasStationNavigate";
 
 import UserNavigate from "../../Components/UserNavigate";
 
@@ -24,7 +24,7 @@ function Usuario() {
           Postos{" "}
         </S.Postos>
       </S.Tabs>
-      {active ? <UserNavigate /> : <Postos />}
+      {active ? <UserNavigate /> : <GasStationNavigate />}
     </S.Container>
   );
 }
