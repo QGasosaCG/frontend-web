@@ -1,8 +1,7 @@
 import React from "react";
-import "./style.css";
+import clear from "../../Assets/clear-icon.png";
 import icon3 from "../../Assets/icon3.png";
 import icon4 from "../../Assets/icon4.png";
-import clear from "../../Assets/clear-icon.png";
 import { useUserContext } from "../../Hooks/useUserContext";
 
 export function PopUpGasStation() {
@@ -12,6 +11,7 @@ export function PopUpGasStation() {
     e.preventDefault();
     setAddPosto(!addPosto);
   }
+
   return (
     <body className="body-popup">
       <div class="popup-station-container">
